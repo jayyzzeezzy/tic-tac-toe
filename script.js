@@ -10,7 +10,14 @@ const gameboard = (function () {
     const board = ["", "", "", "", "", "", "", "", ""];
 
     // generate gameboard UI
+    const gameboard = document.querySelector('.gameboard');
 
+    board.forEach((item, index) => {
+        const square = document.createElement('div');
+        square.classList.add('square');
+        square.setAttribute('data-index', `${index}`);
+        gameboard.appendChild(square);
+    });
 
     // return object
     return { board };
