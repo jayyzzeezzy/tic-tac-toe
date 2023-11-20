@@ -1,0 +1,58 @@
+/* CSS reset */
+h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, Georgia, sans-serif;
+    background-color: var(--background);
+}
+
+/* UI layout */
+#page-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr min-content;
+    justify-items: center;
+}
+
+.announcer {
+    text-align: center;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    border: 2px solid black;
+}
+
+.restart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-github {
+    color: black;
+    transition: transform 300ms ease;
+}
+
+.fa-github:hover {
+    transform: scale(1.3);
+}
