@@ -1,6 +1,11 @@
 :root {
     --primary-color: #6b21a8;
     --secondary-color: white;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* CSS reset */
@@ -33,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    color: white;
 }
 
 .announcer {
@@ -70,6 +76,7 @@ body {
 #restartBtn {
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
     color: white;
     background-color: black;
     padding: 8px 20px;
